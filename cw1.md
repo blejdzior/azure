@@ -1,3 +1,6 @@
+
+
+
 ## Ćwiczenie 1
 
 ### 1. Tworzenie SQL Database

@@ -1,4 +1,4 @@
-
+https://github.com/blejdzior/azure/blob/main/cw1.md
 
 
 ## Ćwiczenie 1

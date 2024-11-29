@@ -1,3 +1,5 @@
+https://github.com/blejdzior/azure/blob/main/lab2.md
+
 ## Zadanie 10. - Program w Python pozwalający na tłumaczenie tekstu z dowolnego języka na wybrany przy pomocy OpenAI API.
 
 ### 1. Wygenerowanie klucza API OpenAI 

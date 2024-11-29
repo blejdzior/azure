@@ -1,4 +1,4 @@
-![obraz](https://github.com/user-attachments/assets/720ef190-7d1f-472c-a6a7-175f4db86877)## Zadanie 10. - Program w Python pozwalający na tłumaczenie tekstu z dowolnego języka na wybrany przy pomocy OpenAI API.
+## Zadanie 10. - Program w Python pozwalający na tłumaczenie tekstu z dowolnego języka na wybrany przy pomocy OpenAI API.
 
 ### 1. Wygenerowanie klucza API OpenAI 
 
@@ -63,3 +63,17 @@ if __name__ == "__main__":
     print("\nTranslated Text:")
     print(translation)
 ````
+
+#### d. Przykład działania
+
+> Enter the text you want to translate:
+>
+> Je m’appelle Jessica. Je suis une fille, je suis française et j’ai treize ans. Je vais à l’école à Nice, mais j’habite à Cagnes-Sur-Mer. J’ai deux frères. Le premier s’appelle Thomas, il a quatorze ans. Le second s’appelle Yann et il a neuf ans. Mon papa est italien et il est fleuriste. Ma mère est allemande et est avocate. Mes frères et moi parlons français, italien et allemand à la maison. Nous avons une grande maison avec un chien, un poisson et deux chats.
+> 
+> Enter the target language (e.g., English): Polish
+
+>
+>Translated Text:
+>
+>Nazywam się Jessica. Jestem dziewczyną, jestem Francuzką i mam trzynaście lat. Chodzę do szkoły w Nicei, ale mieszkam w Cagnes-Sur-Mer. Mam dwóch braci. Pierwszy nazywa się Thomas, ma czternaście lat. Drugi nazywa się Yann i ma dziewięć lat. Mój tata jest Włochem i jest kwiaciarzem. Moja mama jest Niemką i jest prawniczką. Moi bracia i ja mówimy po francusku, włosku i niemiecku w domu. Mamy duży dom z psem, rybą i dwoma kotami.
+

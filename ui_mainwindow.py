@@ -95,11 +95,11 @@ class Ui_MainWindow(object):
         self.tab_document.setObjectName("tab_document")
 
         # Add radio buttons to the "Document" tab
-        self.radioButton_pit = QRadioButton(self.tab_document)
-        self.radioButton_pit.setObjectName("radioButton_pit")
-        self.radioButton_pit.setGeometry(QRect(10, 50, 100, 30))  # Adjust position as needed
-        self.radioButton_pit.setText("PIT")
-        self.radioButton_pit.setChecked(True)
+        self.radioButton_student_id = QRadioButton(self.tab_document)
+        self.radioButton_student_id.setObjectName("radioButton_student_id")
+        self.radioButton_student_id.setGeometry(QRect(10, 50, 100, 30))  # Adjust position as needed
+        self.radioButton_student_id.setText("Student ID")
+        self.radioButton_student_id.setChecked(True)
 
         self.radioButton_invoice = QRadioButton(self.tab_document)
         self.radioButton_invoice.setObjectName("radioButton_invoice")

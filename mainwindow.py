@@ -2,6 +2,8 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog
 from ui_mainwindow import Ui_MainWindow
 from translator import *
 from article import *
+from documents import *
+import json
 
 import time
 class MainWindow(QMainWindow):
@@ -75,8 +77,19 @@ class MainWindow(QMainWindow):
     def analyze_file(self):
         # Get the file path from the QLineEdit
         file_path = self.ui.filePath_lineEdit.text()
+        result = None
         if file_path:
-            # Perform your analysis logic here
             self.ui.textEdit_output.setPlainText(f"Analyzing file:\n{file_path}")
+            if self.ui.radioButton_student_id.isChecked():
+                result = analyze_student_id(file_path)
+            elif self.ui.radioButton_invoice.isChecked():
+                result = analyze_invoice(file_path)
+            else:
+                self.ui.textEdit_output.setPlainText("Check either PIT or Invoice type of file")
+                return
+            result = json.dumps(result, indent=4, sort_keys=True, default=str)
+            self.ui.textEdit_output.setPlainText(result)
+            with open('result.json', 'w') as f:
+                f.write(result)
         else:
             self.ui.textEdit_output.setPlainText("No file selected. Please select a file to analyze.")
